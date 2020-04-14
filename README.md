@@ -8,7 +8,7 @@ PkgConfig via
 results in the following linking error:
 
 ```
-MPFSsmth@dcsfen02: ~/barn/throwAwayCode/buildCmakeNetcdf $ make 
+$ make 
 Scanning dependencies of target foo
 [ 50%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
 [100%] Linking CXX executable foo
@@ -26,12 +26,11 @@ linking.
 
 ## contents
 
-- CMakeLists.txt - build file
-- foo.cpp - netcdfcxx source code
-- LICENSE - legal stuff
-- README.md - this file
-- 
-- netcdfPkgConfig - directory with netcdf pkgconfig files
+- CMakeLists.txt: build file
+- foo.cpp: netcdfcxx source code
+- LICENSE: legal stuff
+- README.md: this file
+- netcdfPkgConfig: directory with netcdf pkgconfig files
  - netcdf-cxx4.pc
  - netcdf.pc
 
