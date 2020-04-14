@@ -31,8 +31,8 @@ linking.
 - LICENSE: legal stuff
 - README.md: this file
 - netcdfPkgConfig: directory with netcdf pkgconfig files
- - netcdf-cxx4.pc
- - netcdf.pc
+  - netcdf-cxx4.pc
+  - netcdf.pc
 
 ## setup
 
