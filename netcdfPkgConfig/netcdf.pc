@@ -1,0 +1,13 @@
+prefix=/gpfs/u/software/dcs-spack-install/v0133gccSpectrum/linux-rhel7-power9le/gcc-7.4.0-1/netcdf-4.7.2-2k65qvcfins3vpqbbbpxwedl7tnytjmi
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+ccompiler=/opt/ibm/spectrum_mpi/bin/mpicc
+
+Name: netcdf-c
+Description: NetCDF Client Library for C
+URL: http://www.unidata.ucar.edu/netcdf
+Version: 4.7.2
+Libs: -L${libdir} -lnetcdf
+Libs.private: -lpnetcdf -lhdf5_hl -lhdf5 -lm -ldl -lz 
+Cflags: -I${includedir}

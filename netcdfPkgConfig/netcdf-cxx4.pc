@@ -1,0 +1,13 @@
+prefix=/gpfs/u/software/dcs-spack-install/v0133gccSpectrum/linux-rhel7-power9le/gcc-7.4.0-1/netcdf-cxx4-4.3.1-7lwefeghu3za7l46xhlezrgdrhgrddq4
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+ccompiler=/gpfs/u/software/dcs-spack-src/spack/lib/spack/env/gcc/gcc
+cppcompiler=/gpfs/u/software/dcs-spack-src/spack/lib/spack/env/gcc/g++
+
+Name: netcdf-cxx4
+Description: NetCDF C++ Client Library
+Version: 4.3.1
+Libs: -L${libdir} -lnetcdf_c++4
+Cflags: -I${includedir}
+Requires: netcdf
